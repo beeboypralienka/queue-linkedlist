@@ -3,7 +3,8 @@
 using namespace std;
 
 void menu(){
-	cout<<"\n1. Enqueue\n2. Dequeue\n3. Display\n4. Quit";
+	cout<<"\n Queue Linked-List\n";
+	cout<<"1. Enqueue\n2. Dequeue\n3. Display\n4. Quit";
 }
 
 int main(){
