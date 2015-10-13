@@ -42,7 +42,7 @@ void Queue::display(){
     }else{
     	cout<<"\n\nData queue saat ini adalah: \n";
         while(p!=NULL){
-            cout<<p->info<<" -> ";
+            cout<<p->info<<" <- ";
             p = p->next;
         }
         cout<<endl;

@@ -3,7 +3,7 @@
 using namespace std;
 
 void menu(){
-	cout<<"1. Enqueue\n2. Dequeue\n3. Display\n4. Quit";
+	cout<<"\n1. Enqueue\n2. Dequeue\n3. Display\n4. Quit";
 }
 
 int main(){
@@ -11,7 +11,7 @@ int main(){
     char choice;        
     menu();
     while(true){
-    	do{			
+    	do{					
 	        cout<<"\n\nMasukkan salah satu pilihan di atas: ";
 	        cin>>choice;
 	        if(choice=='1'){	        	
