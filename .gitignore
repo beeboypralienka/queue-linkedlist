@@ -5,7 +5,6 @@
 *.obj
 
 # Project Dev C++
-*.dev
 *.win
 *.layout
 
