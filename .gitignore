@@ -1,7 +1,33 @@
-</pre>
-Source code/*.dev
-Source code/*.exe
-Source code/*.o
-Source code/*.win
-Source code/*.layout
-<pre>
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Project Dev C++
+*.dev
+*.win
+*.layout
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
