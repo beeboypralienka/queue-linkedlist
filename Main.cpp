@@ -2,31 +2,41 @@
 #include "Queue.h"
 using namespace std;
 
-int main(){
+void menu(){
+	cout<<"1. Enqueue\n2. Dequeue\n3. Display\n4. Quit";
+}
 
+int main(){
     Queue queue;
-    int choice;
+    char choice;        
+    menu();
     while(true){
-        cout<<"\n1.Enqueue\n2. Dequeue\n3. Display\n4.Quit";
-        cout<<"\nEnter your choice: ";
-        cin>>choice;
-        switch(choice){
-            case 1:
-                queue.enqueue();
-                break;
-            case 2:
-                queue.dequeue();
-                break;
-            case 3:
-                queue.display();
-                break;
-            case 4:
-                exit(0);
-                break;
-            default:
-                cout<<"\nInvalid Input. Try again! \n";
-                break;
-        }
-    }
+    	do{			
+	        cout<<"\n\nMasukkan salah satu pilihan di atas: ";
+	        cin>>choice;
+	        if(choice=='1'){	        	
+				queue.enqueue();
+				system("cls");
+				menu();
+			}else if(choice=='2'){				
+				system("cls");
+				menu();
+				queue.dequeue();				
+			}else if(choice=='3'){
+				system("cls");
+				menu();				
+				queue.display();				
+			}else if(choice=='4'){
+				exit(0);
+			}else{
+				system("cls");
+				menu();
+				cout<<endl<<endl<<"Maaf, pilihan tidak tersedia!"<<endl<<endl;
+			}
+		}
+		while(
+				(choice!='1')&&(choice!='2')&&(choice!='3')&&(choice!='4')
+		);    
+	}        		    
     return 0;
 }

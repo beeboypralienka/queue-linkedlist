@@ -9,8 +9,8 @@ Queue::Queue(){
 
 void Queue::enqueue(){
     int data;
-    node *temp = new node;
-    cout<<"Enter the data to enqueue: ";
+    node *temp = new node;    
+    cout<<endl<<endl<<"Masukkan data untuk di-enqueue: ";
     cin>>data;
     temp->info = data;
     temp->next = NULL;
@@ -25,11 +25,11 @@ void Queue::enqueue(){
 void Queue::dequeue(){
     node *temp = new node;
     if(front == NULL){
-        cout<<"\nQueue is Emtpty\n";
+        cout<<"\n\nMaaf, tidak dapat dequeue! Karene tidak ada queue saat ini!\n";
     }else{
         temp = front;
         front = front->next;
-        cout<<"The data Dequeued is "<<temp->info;
+        cout<<endl<<endl<<"Data yang di-dequeue adalah "<<temp->info<<endl;
         delete temp;
     }
 }
@@ -38,11 +38,13 @@ void Queue::display(){
     node *p = new node;
     p = front;
     if(front == NULL){
-        cout<<"\nNothing to Display\n";
+        cout<<"\n\nMaaf, saat ini tidak ada queue!\n";
     }else{
+    	cout<<"\n\nData queue saat ini adalah: \n";
         while(p!=NULL){
-            cout<<endl<<p->info;
+            cout<<p->info<<" -> ";
             p = p->next;
         }
+        cout<<endl;
     }
 }
