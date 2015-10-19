@@ -2,6 +2,9 @@
 #include "Queue.h"
 using namespace std;
 
+/* Fachrul Pralienka Bani Muhamad */
+/*           5115201044           */
+
 Queue::Queue(){
     rear = NULL;
     front = NULL;

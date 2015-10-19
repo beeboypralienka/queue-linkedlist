@@ -2,6 +2,9 @@
 #include "Queue.h"
 using namespace std;
 
+/* Fachrul Pralienka Bani Muhamad */
+/*           5115201044           */
+
 void menu(){
 	cout<<"\n Queue Linked-List\n";
 	cout<<"1. Enqueue\n2. Dequeue\n3. Display\n4. Quit";
